@@ -1,8 +1,8 @@
 FROM		    ubuntu:14.04
 MAINTAINER	Josh Chaney "josh@chaney.io"
 
-ADD         https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2 /var/www/
-RUN         cd /var/www && tar xfv owncloud-7.0.2.tar.bz2
+ADD         https://download.owncloud.org/community/owncloud-7.0.3.tar.bz2 /var/www/
+RUN         cd /var/www && tar xfv owncloud-7.0.3.tar.bz2
 ADD         bootstrap.sh /usr/bin/
 ADD         nginx_ssl.conf /root/
 ADD         nginx.conf /root/
